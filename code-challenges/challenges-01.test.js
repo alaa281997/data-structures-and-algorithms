@@ -106,10 +106,18 @@ Then, write a function named addNumbers that takes in four arguments:
 Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
 
 Return the modified array.
+
+describe('Testing challenge 5', () => {
+  test('It should add the number 8 to the array five times', () => {
+    expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
+    expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
+  });
+});
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
   // Solution code here...
+  
 };
 
 const addNumbers = (num, arr, times, callback) => {
